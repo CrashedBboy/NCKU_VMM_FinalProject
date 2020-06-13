@@ -1,7 +1,7 @@
 {
-    "name": "vmm-router",
+    "name": "vmm-memory",
     "version": "1.0.0",
-    "description": "router of VMM project",
+    "description": "memory allocator of VMM project",
     "author": "CrashedBboy <crashedbboy@gmail.com>",
     "main": "server.js",
     "scripts": {
