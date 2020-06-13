@@ -14,7 +14,7 @@ then a new Docker image named `vmm/router` is created.
 
 ```bash
 sudo docker run --name router -p 8080:8080 -d vmm/router
-# run `sudo docker container ps` to check
+# run `sudo docker ps` to check
 ```
 
 ### 3. Assign Static IP address for Container `router`

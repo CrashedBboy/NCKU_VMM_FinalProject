@@ -45,9 +45,7 @@ app.get('/memory', (req, res) => {
         json: true
     }, (err, res, body) => {
         
-        if (err) { 
-            console.log(err);
-
+        if (err) {
             return res.json({
                 result: false,
                 error: err,
@@ -55,13 +53,19 @@ app.get('/memory', (req, res) => {
             });
         }
 
-        console.log(body);
+        if (!body.result) {
+            return res.json({
+                result: false,
+                error: body.error,
+                data: null
+            });
+        }
+
+        
         return res.json({
             result: true,
             error: null,
-            data: {
-                duration: body.duration
-            }
+            data: { duration: body.duration }
         });
     });
 });
