@@ -43,7 +43,7 @@ app.get('/memory', (req, res) => {
         url: `http://${IP.memory}?size=${size}&iteration=${iteration}`,
         method: 'GET',
         json: true
-    }, (err, res, body) => {
+    }, (err, _, body) => {
         
         if (err) {
             return res.json({
