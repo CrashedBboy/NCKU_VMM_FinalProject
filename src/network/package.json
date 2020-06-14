@@ -1,0 +1,13 @@
+{
+    "name": "vmm-network",
+    "version": "1.0.0",
+    "description": "network throughput test of VMM project",
+    "author": "CrashedBboy <crashedbboy@gmail.com>",
+    "main": "network.js",
+    "scripts": {
+        "start": "node network.js"
+    },
+    "dependencies": {
+        "request": "^2.88.2"
+    }
+}
