@@ -1,6 +1,13 @@
 # NCKU_VMM_FinalProject
 Final project for course 'Virtualization & Virtual Machine' in NCKU.
 
+## Goal: Comparison of Microservice Performance between Hyper-V and VirtualBox
+To test performance of utilizing hardware resources including CPU, memory, disk in following virtualization type:
+* Bare-metal hypervisor (Windows Hyper-V)
+* Hosted hypervisor (Oracle VirtualBox)
+
+To conduct experiment, we construct a microservice consisting of containers using CPU, disk, memory resources respectively.
+
 ## Initial Setup
 
 create new docker network named `my-network`
