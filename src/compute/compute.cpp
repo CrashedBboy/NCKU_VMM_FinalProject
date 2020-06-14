@@ -16,7 +16,7 @@ int main(int argc, char **argv)
         // start time
         auto start = std::chrono::steady_clock::now();
 
-        // memory allocation
+        // compute prime numbers
         for (int epoch = 0; epoch < iteration; epoch++)
         {
 

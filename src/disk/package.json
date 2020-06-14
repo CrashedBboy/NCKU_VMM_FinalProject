@@ -1,7 +1,7 @@
 {
-    "name": "vmm-compute",
+    "name": "vmm-disk",
     "version": "1.0.0",
-    "description": "simple CPU benchmark of VMM project",
+    "description": "Disk writer/reader of VMM project",
     "author": "CrashedBboy <crashedbboy@gmail.com>",
     "main": "server.js",
     "scripts": {
