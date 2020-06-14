@@ -83,7 +83,7 @@ app.get('/compute', (req, res) => {
         url: `http://${IP.compute}?max=${max}&iteration=${iteration}`,
         method: 'GET',
         json: true
-    }, (err, res, body) => {
+    }, (err, _, body) => {
         
         if (err) { 
             console.log(err);
@@ -91,6 +91,14 @@ app.get('/compute', (req, res) => {
             return res.json({
                 result: false,
                 error: err,
+                data: null
+            });
+        }
+
+        if (!body.result) {
+            return res.json({
+                result: false,
+                error: body.error,
                 data: null
             });
         }
@@ -119,7 +127,7 @@ app.get('/disk', (req, res) => {
         url: `http://${IP.disk}?size=${size}&iteration=${iteration}`,
         method: 'GET',
         json: true
-    }, (err, res, body) => {
+    }, (err, _, body) => {
         
         if (err) { 
             console.log(err);
@@ -127,6 +135,14 @@ app.get('/disk', (req, res) => {
             return res.json({
                 result: false,
                 error: err,
+                data: null
+            });
+        }
+
+        if (!body.result) {
+            return res.json({
+                result: false,
+                error: body.error,
                 data: null
             });
         }
