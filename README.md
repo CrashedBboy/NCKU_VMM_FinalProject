@@ -21,8 +21,36 @@ To conduct experiment, we construct a microservice consisting of containers usin
     - writing & reading 5000 chars, 7500 chars, 10000 chars
     - iteration for 500 times, 750 times, 1000 times
 
-## Development Notes
+## Presentation Outline
 
+1. Introduction
+    - Goal: Comparison of Microservice Performance between Hyper-V and VirtualBox
+    - Motivation: investigate the performance of 2 common types of virtualization, and build microservice in practice.
+    - Brief intro of system architecture for experiments
+2. Related Works
+    - Summary of all previous paper presentation which is related to:
+        - Performance comparison
+        - Benchmark tools
+        - Container visualization
+3. System Architecture
+    - Tools used:
+        - Docker
+        - Oracle VirtualBox
+        - Windows Hyper-V
+        - Vagrant
+    - Architecture:
+        - Illustration
+        - Each container's function, corresponding test command, evaluation metrics
+4. Experimental Analysis
+    - Compare Bare-Metal(Hyper-V) with Hosted (VirtualBox) in aspect of:
+        - Network throughput
+        - CPU computing
+        - Memory allocation
+        - Disk Read & Write
+    - present: code for evaluation, experiment results, our insights
+5. Conclusion & Future Work
+
+## Development Notes
 
 ### 1. Initial Docker Setup
 
